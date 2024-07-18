@@ -17,7 +17,7 @@ module "dev_firewal_policy" {
       enable_logging = true
       match = {
         dest_fqdns = ["twitter.com"]
-        dest_threat_intelligences = ["iplist-public-clouds"]
+        #dest_threat_intelligences = ["iplist-public-clouds"]
         layer4_configs = [
           {
             ip_protocol = "all"
